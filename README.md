@@ -30,7 +30,7 @@ to ensure it remains alive and well.
 2. Run `whac-a-pod.sh`. This takes a service and namespace and deletes
    a random number of pods.
    ```
-   bash whac-a-pod.sh [service name] [optional: namespace, default]
+   bash whac-a-pod.sh [service name] [optional: namespace, default] [optional: deletion interval, 10 seconds]
    ```
 3. In a separate shell, run `check-endpoint.sh`. This is an infinite loop
    that checks the API endpoint of a service to ensure it is up.
